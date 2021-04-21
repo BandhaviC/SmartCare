@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Hello, Leonardo!
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h5 class="ion-text-left">Medical blogs for you</h5>
+  <ion-item>
+  <ion-list *ngFor="let blogGroup of blogCollection">
+      <ion-card *ngFor= "let blogDetail of blogGroup.blogs; let i=index">
+        <ion-card-header class="ion-text-center">
+          <h6 class="blogtitle">{{blogDetail.title}}</h6>
+          <p>{{blogDetail.author}}</p>
+          <p>{{blogDetail.date}}</p>
+        </ion-card-header>
+        <ion-card-content>         
+            <img slot= "start" src="{{blogDetail.img}}">
+            <p>{{blogDetail.abstract}}</p>
+        <ion-row>
+          <ion-col class="ion-text-right">
+          <ion-button size="small">Read more</ion-button>
+        </ion-col>
+        </ion-row> 
+        </ion-card-content>
+      </ion-card> 
+  </ion-list>
+</ion-item>
+</ion-content>

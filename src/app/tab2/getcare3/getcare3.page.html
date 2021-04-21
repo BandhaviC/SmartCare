@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Please answer the following questions</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-grid>
+  <ion-row>
+  
+  <ion-col size-md="8" offset-md="2" class="ion-text-center">
+    <h2>How long have you felt this way?</h2>
+  <ion-item>
+  <ion-input type="number" min="0" max="30"></ion-input><p>day(s)</p>
+  </ion-item>
+  <ion-item>
+    <ion-label>Your temperature (F)</ion-label>
+    <ion-input type="number" min="90" max="125" slot="end"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Your height (cm)</ion-label>
+    <ion-input type="number" min="50" max="220" slot="end"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Your weight (kg)</ion-label>
+    <ion-input type="number" min="2" max="220" slot="end"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Your pharmacy</ion-label>
+    <ion-input type="text" slot="end"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-textarea placeholder="Your pharmacy address"></ion-textarea>   
+  </ion-item>
+  <ion-button href="/tabs/tab2/">Next</ion-button>
+</ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

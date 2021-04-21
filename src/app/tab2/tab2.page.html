@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary"> 
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Who is this visit for?
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="8" offset-md="2">
+        <ion-list>
+          <ion-item
+          *ngFor="let patient of loadedPatients.slice()"
+          href="/tabs/tab2/getcare2">
+          <ion-thumbnail slot="start">
+            <img src= {{patient.image}}>
+          </ion-thumbnail>
+          <ion-label>
+            <h2>{{patient.name}}</h2>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src= "assets/imgs/adduser.png">
+          </ion-thumbnail>
+          <ion-label>
+            <h2>My Child</h2>
+            <p>Must be under 18</p>
+          </ion-label>
+        </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-md="8" offset-md="2">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Someone Else?</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>If the patient is over 18, they need to create their own account, even if they are a dependent on your health plan.</p>
+          </ion-card-content>
+        </ion-card>
+        <h2>Crsis/ Emergency?</h2>
+        <p>If you are experiencing a crisis or emergency, please dial 911.
+          You may also access the free, 24-hour National Suicide Prevention Lifeline at 1-800-273-8255 (1-800-273-TALK).
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

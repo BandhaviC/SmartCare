@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>What is the reason for the visit?</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [fullscreen]="true"> 
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="8" offset-md="2" class="ion-text-center">
+        <h2>Choose from the reasons</h2>
+        <ion-list>         
+          <ion-item>
+            <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+            <ion-label>Cold
+            </ion-label>
+          </ion-item>   
+        <ion-item>  
+          <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>      
+            <ion-label>Cough
+            </ion-label>           
+        </ion-item>
+        <ion-item>   
+          <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>      
+            <ion-label>Influenza (flu)
+            </ion-label>           
+        </ion-item>
+        <ion-item>    
+          <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>      
+            <ion-label>Sore Throat
+            </ion-label>           
+        </ion-item>
+        <ion-item>        
+          <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox> 
+            <ion-label>Allergies
+            </ion-label>            
+        </ion-item>
+        <ion-item>
+          <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+            <ion-label>COVID-19 evaluation
+            </ion-label>           
+        </ion-item>
+        <ion-item>
+          <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+            <ion-label>Urinary tract infection (UTI)
+            </ion-label>           
+        </ion-item>
+        <ion-item>   
+          <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>      
+            <ion-label>Diarrhea
+            </ion-label>           
+        </ion-item>
+        <ion-item>
+          <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+            <ion-label>Rashes
+            </ion-label>           
+        </ion-item>
+        <ion-item>    
+          <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>      
+            <ion-label>Prescription refill
+            </ion-label>           
+        </ion-item>
+        <ion-item>
+          <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+            <ion-label>Others
+            </ion-label>            
+        </ion-item>
+        </ion-list>
+        <ion-item>
+          <ion-textarea placeholder="Briefly describe your problem here..."></ion-textarea>   
+        </ion-item>
+        <ion-button href="/tabs/tab2/getcare3">Next</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

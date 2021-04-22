@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
       Recent Notifications
@@ -6,12 +6,36 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-content>
+  <ion-row>
+    <ion-col size-md="8" offset-md="2">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Notifications</ion-card-title>
+          <p>Now<p>
+        </ion-card-header>
+        <ion-card-content>
+          <p>You have an upcoming appointment with Dr Ben Carson on 05/02/20121 10:00am</p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Notifications</ion-card-title>
+          <p>Yesterday</p>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Please update your medical records on your account and be ready for your appointment</p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Notifications</ion-card-title>
+          <p>2 days ago</p>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Your prescription has been sent to CVS pharmacy at Orange</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
 </ion-content>

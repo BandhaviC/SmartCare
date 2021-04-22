@@ -13,13 +13,16 @@
   line-height: 26px;
 }
 
-#container p {
+p {
   font-size: 16px;
   line-height: 22px;
+  text-align: center;
+  color: purple;
+}
 
-  color: #8c8c8c;
-
-  margin: 0;
+img {
+margin: auto;
+display: block
 }
 
 #container a {

@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Patient } from './patient.model'
+
 
 @Injectable({
   providedIn: 'root'
@@ -16,5 +18,6 @@ export class PatientService {
     return [...this._patients];
   }
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 }
+

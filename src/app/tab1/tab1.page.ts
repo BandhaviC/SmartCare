@@ -13,5 +13,7 @@ export class Tab1Page implements OnInit{
     this.blogCollection = blogs;
   }
   constructor() {}
-
+  openUrl()
+  { window.open('https://www.health.harvard.edu/blog/are-antidepressants-also-pain-relievers-2021041622383', '_system'); }
 }
+
